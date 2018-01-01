@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ly.testwebview.WebviewActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_load"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_loadUrl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="loadUrl"/>
+
+        <Button
+            android:id="@+id/btn_loadAppHtmlFile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="loadAppHtmlFile"/>
+
+        <Button
+            android:id="@+id/btn_loadNativeHtmlFile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="loadNativeHtmlFile"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_clearCache"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="clearCache"/>
+
+        <Button
+            android:id="@+id/btn_clearHistory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="clearHistory"/>
+
+        <Button
+            android:id="@+id/btn_clearFormData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="clearFormData"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_selfAdaptionSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="selfAdaptionSize"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/layout_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_forbidZoom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="forbidZoom"/>
+
+        <Button
+            android:id="@+id/btn_supportZoom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="supportZoom"/>
+
+        <Button
+            android:id="@+id/btn_setZoomControl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="setWebviewParams"/>
+
+        <Button
+            android:id="@+id/btn_hideZoomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="hideZoomButton"/>
+
+        <Button
+            android:id="@+id/btn_showZoomButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="showZoomButton"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_otherSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="otherSettings"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/layout_loadtype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_networkLoad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="networkLoad"
+            />
+
+        <Button
+            android:id="@+id/btn_nativeLoad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="nativeLoad"/>
+
+        <Button
+            android:id="@+id/btn_outLineLoad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="outLineLoad"/>
+    </LinearLayout>
+
+
+    <WebView
+        android:id="@+id/wv_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

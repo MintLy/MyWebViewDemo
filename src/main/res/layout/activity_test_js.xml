@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ly.testwebview.TestJsActivity">
+
+    <Button
+        android:id="@+id/btn_load_android_to_js"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="load_android_to_js"/>
+
+    <LinearLayout
+        android:id="@+id/layout_androidCallJs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_androidCallJs_loadUrl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="androidCallJsByLoadUrl"/>
+
+        <Button
+            android:id="@+id/btn_androidCallJs_evaluateJavascript"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="androidCallJsByEvaluateJavascript"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_load_js_to_android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="load_js_to_android"/>
+
+    <LinearLayout
+        android:id="@+id/layout_JsCallAndroid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_jsCallAndroid_addJavascriptInterface"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="jsCallAndroidByaddJavascriptInterface"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_webview_cache"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
